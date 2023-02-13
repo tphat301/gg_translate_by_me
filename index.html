@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        width: 500px;
+        margin: auto;
+        font-size: 18px;
+      }
+    </style>
+    <div class="container">
+      <h1>Freetus.net hướng dẫn tích hợp google translate</h1>
+
+      <p>Chọn ngôn ngữ muốn hiển thị!</p>
+      <div id="translate_select"></div>
+
+      <h2>Nội dung trang web</h2>
+      <p>
+        Freetuts.net là một blog cá nhân được xây dựng với mục đích chia sẻ kiến
+        thức về lập trình web nói chung và lập trình nói riêng. Blog được ra đời
+        vào tháng 4 năm 2014 bởi cá nhân Cường, một lập trình viên tự do và hiện
+        nay đã về quê để sống một cuộc sống tự do, không bị gò bó bởi công nghệ
+        và máy tính.
+      </p>
+    </div>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "vi" },
+          "translate_select"
+        );
+      }
+    </script>
+  </body>
+</html>
